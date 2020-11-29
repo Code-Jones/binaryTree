@@ -1,5 +1,7 @@
 package com.abstractdata.contracts;
 
+import com.abstractdata.util.BSTNode;
+
 import java.io.Serializable;
 
 /**
@@ -19,7 +21,7 @@ public interface BSTNodeADT<D> extends Serializable {
      *
      * @return left node
      */
-    public BSTNodeADT<D> getLeft();
+    public BSTNode<D> getLeft();
 
     /**
      * setter for the node left of this node
@@ -28,7 +30,7 @@ public interface BSTNodeADT<D> extends Serializable {
      * post-conditions: left node is created and set to be this nodes left node
      *
      */
-    public void setLeft(BSTNodeADT<D> node);
+    public void setLeft(BSTNode<D> node);
 
     /**
      * getter for the node right of this node
@@ -38,7 +40,7 @@ public interface BSTNodeADT<D> extends Serializable {
      *
      * @return right node
      */
-    public BSTNodeADT<D> getRight();
+    public BSTNode<D> getRight();
 
     /**
      * setter for the node right of this node
@@ -47,7 +49,7 @@ public interface BSTNodeADT<D> extends Serializable {
      * post-conditions: right node is created and set to be this nodes right node
      *
      */
-    public void setRight(BSTNodeADT<D> node);
+    public void setRight(BSTNode<D> node);
 
     /**
      * Getter for the data within this node

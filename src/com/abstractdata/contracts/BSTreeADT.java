@@ -33,7 +33,7 @@ public interface BSTreeADT<D> {
      * @param node node we're checking to see if it has a left child
      * @return true if it does have a left child
      */
-    public boolean hasLeftChild(BSTNodeADT<D> node);
+    public boolean hasLeftChild(BSTNode<D> node);
 
     /**
      *  checks to see if it has a right child
@@ -44,7 +44,7 @@ public interface BSTreeADT<D> {
      * @param node node we're checking to see if it has a right child
      * @return true if it does have a right child
      */
-    public boolean hasRightChild(BSTNodeADT<D> node);
+    public boolean hasRightChild(BSTNode<D> node);
 
     /**
      * checks to see if this node is a leaf
@@ -54,7 +54,7 @@ public interface BSTreeADT<D> {
      *
      * @return true if it is a leaf
      */
-    public boolean isLeaf();
+    public boolean isLeaf(BSTNode<D> node);
 
     /**
      * returns the height of the given node
@@ -75,7 +75,7 @@ public interface BSTreeADT<D> {
      *
      * @return root node
      */
-    public BSTNodeADT<D> getRoot();
+    public BSTNode<D> getRoot();
 
     /**
      * returns the size of the tree
